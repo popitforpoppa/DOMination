@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Fundamentals Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <!-- Start screen -->
+    <section id="start-container">
+      <h1>JavaScript Fundamentals Quiz</h1>
+      <p class="subtitle">Test your knowledge of the basics. Pick the best answer for each question and get instant feedback.</p>
+      <button id="start-button" class="btn-primary">Start Quiz</button>
+    </section>
+
+    <!-- Quiz screen -->
+    <section id="quiz-container" class="hidden">
+      <div class="quiz-header">
+        <span id="progress-text"></span>
+        <span id="score-tracker"></span>
+      </div>
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+      <h2 id="question-container"></h2>
+      <div id="options-container"></div>
+      <p id="feedback" class="feedback"></p>
+      <button id="next-button" class="btn-primary" disabled>Next Question</button>
+    </section>
+
+    <!-- Score screen -->
+    <section id="score-container" class="hidden">
+      <h2>Quiz Complete!</h2>
+      <p id="score" class="score-text"></p>
+      <p id="score-message" class="subtitle"></p>
+      <button id="restart-button" class="btn-primary">Restart Quiz</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
